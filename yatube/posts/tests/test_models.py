@@ -18,10 +18,6 @@ class PostModelTest(TestCase):
             text="Тестовая пост",
         )
 
-    def setUp(self):
-        self.post = PostModelTest.post
-        self.group = PostModelTest.group
-
     def test_models_have_correct_object_names(self):
         """Проверяем, что у моделей корректно работает __str__."""
         vals = (
